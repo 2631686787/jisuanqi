@@ -1,0 +1,137 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.calculator.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="end|bottom"
+            android:hint="@string/zero"
+            android:singleLine="true"
+            android:textAlignment="textEnd"
+            android:textSize="50sp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="4"
+            android:orientation="horizontal"
+            android:rowCount="6">
+
+            <Button
+                android:id="@+id/btn_clear"
+                style="@style/button_style"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/btn_sqrt"
+                style="@style/button_style"
+                android:text="@string/sqrt" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/button_style"
+                android:text="@string/clear" />
+
+            <Button
+                android:id="@+id/btn_plus"
+                style="@style/button_style"
+                android:text="@string/plus" />
+
+            <Button
+                android:id="@+id/num_seven"
+                style="@style/button_style"
+                android:text="@string/seven" />
+
+            <Button
+                android:id="@+id/num_eight"
+                style="@style/button_style"
+                android:text="@string/eight" />
+
+            <Button
+                android:id="@+id/num_nine"
+                style="@style/button_style"
+                android:text="@string/nine" />
+
+            <Button
+                android:id="@+id/btn_minus"
+                style="@style/button_style"
+                android:text="@string/minus" />
+
+            <Button
+                android:id="@+id/num_four"
+                style="@style/button_style"
+                android:text="@string/four" />
+
+            <Button
+                android:id="@+id/num_five"
+                style="@style/button_style"
+                android:text="@string/five" />
+
+            <Button
+                android:id="@+id/num_six"
+                style="@style/button_style"
+                android:text="@string/six" />
+
+            <Button
+                android:id="@+id/btn_mul"
+                style="@style/button_style"
+                android:text="@string/Mul" />
+
+
+            <Button
+                android:id="@+id/num_one"
+                style="@style/button_style"
+                android:text="@string/one" />
+
+            <Button
+                android:id="@+id/num_two"
+                style="@style/button_style"
+                android:text="@string/two" />
+
+            <Button
+                android:id="@+id/num_three"
+                style="@style/button_style"
+                android:text="@string/three" />
+
+            <Button
+                android:id="@+id/btn_Div"
+                style="@style/button_style"
+                android:text="@string/div" />
+
+            <Button
+                android:id="@+id/num_zero"
+                style="@style/button_style"
+                android:layout_gravity="fill"
+                android:text="@string/zero" />
+
+            <Button
+                android:id="@+id/btn_dot"
+                style="@style/button_style"
+                android:text="@string/dot" />
+
+            <Button
+                android:id="@+id/btn_equal"
+                style="@style/button_style"
+                android:layout_columnSpan="2"
+                android:text="@string/equal" />
+        </GridLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
